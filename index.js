@@ -1,18 +1,12 @@
-console.log("Bienvenidos")
+console.log("Welcome to Rock, Paper, Scissors Game!!!");
 function getComputerChoice() {
     opciones = ['rock', 'paper', 'scissors'];
     return opciones[Math.floor(Math.random() * opciones.length)];
 }
 
-playerSelection=prompt('Rock, Paper or Scissors???');
-playerSelection=playerSelection.toLowerCase();
-console.log('playerSelection:  ', playerSelection);
-
-computerSelection = getComputerChoice();
-console.log('computerSelection:  ', computerSelection);
-
 function playRound(playerSelection, computerSelection) {
-
+    console.log('playerSelection:  ', playerSelection);
+    console.log('computerSelection:  ', computerSelection);
     if(playerSelection =='rock' &&computerSelection =='paper'){
         return 'You Lose! Paper beats Rock';
     } else if (playerSelection =='paper' &&computerSelection =='rock') {
@@ -26,17 +20,37 @@ function playRound(playerSelection, computerSelection) {
     } else if (playerSelection =='scissors' &&computerSelection =='rock') {
         return 'You Lose! Scissors beats Rock';
     }  else if (playerSelection == computerSelection) {
-        console.log('playerSelection:  ', playerSelection);
-        console.log('computerSelection:  ', computerSelection);
-
         return 'Tie!';
     } else {
         return 'Wrong Option, only correct options Rock, Paper or Scissors';
-    }   
-
+    }
 }
 
-console.log(playRound(playerSelection, computerSelection));
+function game() {
+    playerSelection=prompt('Rock, Paper or Scissors???');
+    playerSelection=playerSelection.toLowerCase();
+    computerSelection = getComputerChoice();    
+    console.log(playRound(playerSelection, computerSelection));
 
+    playerSelection=prompt('Rock, Paper or Scissors???');
+    playerSelection=playerSelection.toLowerCase();
+    computerSelection = getComputerChoice();    
+    console.log(playRound(playerSelection, computerSelection));
 
+    playerSelection=prompt('Rock, Paper or Scissors???');
+    playerSelection=playerSelection.toLowerCase();
+    computerSelection = getComputerChoice();    
+    console.log(playRound(playerSelection, computerSelection));
 
+    playerSelection=prompt('Rock, Paper or Scissors???');
+    playerSelection=playerSelection.toLowerCase();
+    computerSelection = getComputerChoice();    
+    console.log(playRound(playerSelection, computerSelection));
+
+    playerSelection=prompt('Rock, Paper or Scissors???');
+    playerSelection=playerSelection.toLowerCase();
+    computerSelection = getComputerChoice();    
+    console.log(playRound(playerSelection, computerSelection));
+}
+
+game() 
