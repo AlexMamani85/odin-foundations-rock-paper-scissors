@@ -1,4 +1,5 @@
 # Game odin-foundations-rock-paper-scissors
-Just type rock, paper and scissors
 
-Have a nice Game!
+Click on rock, paper and scissors buttons
+
+Have a nice Game with 5 plays!
