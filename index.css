@@ -1,0 +1,23 @@
+.buttonsContainer{
+    text-align: center;
+    margin: 3rem 0;
+    
+}
+button{
+    font-size: 1rem;
+}
+
+#resultado {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+
+}
+
+#resultadoFinal{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 1rem 0;
+
+}
